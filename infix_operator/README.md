@@ -1,0 +1,1 @@
+Inspired by this [hackernews post](https://news.ycombinator.com/item?id=30057048) and [this blogpost](http://tomerfiliba.com/blog/Infix-Operators/) in particular.
