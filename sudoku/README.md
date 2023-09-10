@@ -19,6 +19,8 @@ I liked the elegance of his solution. But I wanted to explore the solution space
    * Variation of basic_with_functions that returns generators instead of lists.
  * [`basic_with_functions_yield_comprehensions.py`](basic_with_functions_yield_comprehensions.py)
    * Variation of basic_with_functions_yield but now using list comprehensions in the inner loop(s).
+ * [`python_specific_from_functions.py`](python_specific_from_functions.py)
+   * This continues from basic_with_functions_yield_comprehensions.py but now uses more list comprehensions. Changed the naming scheme to highlight the fact that this gets quite close to python_specific.py below. But with the use of functions. So while python_specific.py was written a year earlier it now is a natural continuation from this file conceptually. The functions are short enough that we could replace them with a variable name and still have the same readability. We lose the reusability ofc, but that is another matter.
  * [`python_specific.py`](python_specific.py)
    * Using list comprehensions to make things more concice. This allows us to create the units in a way where its easier to get an overview of what is combined and why.
  * [`close_to_norvig.py`](close_to_norvig.py)

@@ -4,7 +4,11 @@
 
 # Norvig calls it cross product, but I think i really is a its a cartesian product.
 # Cartesian is harder to spell however and it both cartesian/cross are nonetheless abuses of the terminology
-# since we dont return the pair (a,b) but a+b. I will lazily call it combine here.
+# since we dont return the pair (a,b) but a+b. I will call it combine here.
+
+# Also while I often dislike nested loops in list comprehensions it feels more ok in cases where the order of the two does not matter.
+# So for unit_boxes below it would only affect the order in which the unit boxes are given which might not matter here.
+# But it depends on how the code is used. For instance my compare.py would fail this file if we did.
 
 def combine(A, B):
     return [a+b for a in A for b in B]

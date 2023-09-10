@@ -3,6 +3,10 @@
 # The first time you see it you will say "hold up, whats this?"
 # But once you understand it the rest of the code is simple.
 
+# Simple is relative to the complexity inherit in the domain.
+# It is not as simple as a single if-statement. But it could not be,
+# the problem is more complex than that!
+
 
 
 # https://norvig.com/sudoku.html
