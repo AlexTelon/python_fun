@@ -20,7 +20,8 @@ IGNORE_PREFIXES = ['test_', 'broken_']
 def test_int_to_roman(n, expected):
     for fname in glob('*.py'):
         if any(map(fname.startswith, IGNORE_PREFIXES)): continue
+        print(fname)
         sys.stdin = StringIO(str(n))
         sys.stdout = StringIO()
         exec(open(fname).read())
-        assert sys.stdout.getvalue() == expected + '\n'
+        assert sys.stdout.getvalue().strip() == expected, f"error in {fname}"
